@@ -19,13 +19,13 @@
 }
 
 .popup__close:focus {
-    outline: none
+    outline: none;
 }
 
 @media (max-width: 768px) {
     .popup__close {
         width:30px;
         height: 30px;
-        right: 0
+        right: 0;
     }
 }

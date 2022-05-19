@@ -9,13 +9,13 @@
     background-size: 100%;
     background-position: 50%;
     cursor: pointer;
-    transition: .335s ease-in-out
+    transition: .335s ease-in-out;
 }
 
 .elements__like:hover {
-    opacity: .6
+    opacity: .6;
 }
 
 .elements__like_active {
-    background-image: url("../../../images/Union.png")
+    background-image: url("../../../images/Union.png");
 }

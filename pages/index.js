@@ -7,11 +7,6 @@ const nameFieldElement = document.querySelector('.popup__input_type_name')
 const subtitleElement = document.querySelector('.profile__subtitle')
 const descriptionElement = document.querySelector('.popup__input_type_description')
 const buttonElement = document.querySelector('.popup__form')
-const addButton = document.querySelector('.profile__add-button')
-const popup1 = document.querySelector('.popup popup_type_photo')
-//console.log(editButton)
-//console.log(popup)
-//console.log(closePopupButton)
 function openPopup(){
     popup.classList.add('popup_open')
     nameFieldElement.value = titleElement.textContent;

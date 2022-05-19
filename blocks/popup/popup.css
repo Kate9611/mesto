@@ -11,10 +11,10 @@
     visibility: hidden;
     opacity: 0;
     transition: visibility .335s,opacity .335s linear;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .popup_open {
     visibility: visible;
-    opacity: 1
+    opacity: 1;
 }

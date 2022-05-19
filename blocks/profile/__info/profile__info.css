@@ -3,7 +3,7 @@
     width: 336px;
     display: flex;
     flex-direction: column;
-    justify-content: enter;
+    justify-content: сenter;
 }
 @media (max-width: 1279px) {
     .profile__info{
