@@ -1,0 +1,13 @@
+.elements {
+    margin: 0 auto;
+}
+
+.elements__open {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .elements {
+        margin:36px auto 0;
+    }
+}

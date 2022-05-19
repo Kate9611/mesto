@@ -1,0 +1,13 @@
+.elements__name {
+    font-family: 'Inter';
+    font-style: normal;
+    width: 246px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

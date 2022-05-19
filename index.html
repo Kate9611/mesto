@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+    <link href="./pages/index.css" rel="stylesheet">
+</head>
+<body class="page">
+    <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="лого">
+    </header>
+    <main>
+        <section class="profile">
+            <button class="profile__avatar-but">
+                <img src="./images/Avatar.png" alt="жак" class="profile__avatar">
+            </button>
+            <div class="profile__info">
+                <div class="profile__user">
+                    <h1 class="profile__title">Жак-Ив Кусто</h1>
+                    <button type="button" class="profile__edit-button" aria-label="Редактировать профиль"></button>
+                </div>
+                <p class="profile__subtitle">Исследователь океана</p>
+            </div>
+            <button type="button" class="profile__add-button" aria-label="Добавить в профиль"></button>
+        </section>
+        <section class="elements">
+            <ul class="elements__list">
+                <li class="elements__item">
+                <button type="button" class="elements_del" style="display: none;"></button>
+                <img class="elements__img" src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="медвед">
+                <div class="elements__but">
+                    <h2 class="elements__name">МедведьМедведьМедведьМедведь</h2>
+                    <button class="elements__like" type="button" title="Лайк" aria-label="поставить лайк"></button>
+                </div>
+                </li>
+                <li class="elements__item">
+                    <button type="button" class="elements_del" style="display: none;"></button>
+                    <img class="elements__img" src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="медвед">
+                    <div class="elements__but">
+                        <h2 class="elements__name">Медведь</h2>
+                        <button class="elements__like" type="button" title="Лайк" aria-label="поставить лайк"></button>
+                    </div>
+                    </li>
+                    <li class="elements__item">
+                        <button type="button" class="elements_del" style="display: none;"></button>
+                        <img class="elements__img" src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="медвед">
+                        <div class="elements__but">
+                            <h2 class="elements__name">Медведь</h2>
+                            <button class="elements__like" type="button" title="Лайк" aria-label="поставить лайк"></button>
+                        </div>
+                        </li>
+                        <li class="elements__item">
+                            <button type="button" class="elements_del" style="display: none;"></button>
+                            <img class="elements__img" src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="медвед">
+                            <div class="elements__but">
+                                <h2 class="elements__name">Медведь</h2>
+                                <button class="elements__like" type="button" title="Лайк" aria-label="поставить лайк"></button>
+                            </div>
+                            </li>
+                            <li class="elements__item">
+                                <button type="button" class="elements_del" style="display: none;"></button>
+                                <img class="elements__img" src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="медвед">
+                                <div class="elements__but">
+                                    <h2 class="elements__name">Медведь</h2>
+                                    <button class="elements__like" type="button" title="Лайк" aria-label="поставить лайк"></button>
+                                </div>
+                                </li>
+                                <li class="elements__item">
+                                    <button type="button" class="elements_del" style="display: none;"></button>
+                                    <img class="elements__img" src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="медвед">
+                                    <div class="elements__but">
+                                        <h2 class="elements__name">Медведь</h2>
+                                        <button class="elements__like" type="button" title="Лайк" aria-label="поставить лайк"></button>
+                                    </div>
+                                    </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__text">&copy;2022 Mesto Russia</h2>
+    </footer>
+    <section class="popup popup_type_edit">
+        <div class="popup__container">
+            <button class="popup__close" type="button" title="Закрыть окно" aria-label="Закрыть"></button>
+                    <h3 class="popup__header">Редактировать профиль</h3>
+                    <form action="" class="popup__form">
+                        <input type="text" class="popup__input popup__input_type_name" name="name" value="" placeholder="Имя пользователя" minlength="2" maxlength="40" required>
+                        <input type="text" class="popup__input popup__input_type_description" name="description" value="" placeholder="Описание пользователя" minlength="2" maxlength="200" required>
+                        <button type="submit" class="popup__button">Сохранить</button>
+                </form>
+        </div>
+    </section>
+    <section class="popup popup_type_photo">
+        <div class="popup__container">
+            <button class="popup__close" type="button" title="Закрыть окно" aria-label="Закрыть"></button>
+                    <h3 class="popup__header">Новое место</h3>
+                    <form action="" class="popup__form"></form>
+                        <input type="text" class="popup__input popup__input_type_place" name="place" value="" placeholder="Название" minlength="2" maxlength="30" required>
+                        <input type="url" class="popup__input popup__input_type_url" name="url" value="" placeholder="Ссылка на картинку" required>
+                        <button class="popup__button" type="submit">Создать</button>
+            </form>
+        </div>
+    </section>
+    <section class="popup popup_type_zoom">
+        <div class="popup__gallery">
+            <button class="popup__close" type="button" title="Закрыть окно" aria-label="Закрыть"></button>
+            <figure class="popup__figure">
+                <img class="popup__img" src="#" alt="Описание">
+                <figcaption class="popup__figcaption"></figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="popup popup_type_del">
+        <div class="popup__container">
+            <button class="popup__close" type="button" title="Закрыть окно" aria-label="Закрыть"></button>
+            <p class="popup__header">Вы уверены?</p>
+            <button type="button" class="popup__button">Да</button>
+        </div>
+    </section>
+    <template id="template-card">
+        <li class="elements__item">
+            <button type="button" class="elements__del"></button>
+            <img class="elements__img" src="link" alt="Описание">
+            <div class="elements__but">
+                <h2 class="elements__name"></h2>
+                <button class="elements__like" type="button" title="Оценить фотографию" aria-label="Поставить лайк"></button>
+                </div>
+            </div>
+        </li>
+    </template>
+    <script src="./pages/index.js"></script>
+</body>
+</html>
