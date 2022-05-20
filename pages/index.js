@@ -6,7 +6,7 @@ const titleElement = document.querySelector('.profile__title')
 const nameFieldElement = document.querySelector('.popup__input_type_name')
 const subtitleElement = document.querySelector('.profile__subtitle')
 const descriptionElement = document.querySelector('.popup__input_type_description')
-const buttonElement = document.querySelector('.popup__form')
+const popupForm = document.querySelector('.popup__form')
 function openPopup(){
     popup.classList.add('popup_open')
     nameFieldElement.value = titleElement.textContent;
@@ -19,8 +19,8 @@ function butSubmit(event){
     event.preventDefault();
     titleElement.textContent = nameFieldElement.value;
     subtitleElement.textContent = descriptionElement.value;
-    closePopup(popup)
+    closePopup()
 }
 editButton.addEventListener('click', openPopup)
 closePopupButton.addEventListener('click', closePopup)
-buttonElement.addEventListener('submit', butSubmit)
+popupForm.addEventListener('submit', butSubmit)

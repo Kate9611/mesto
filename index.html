@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mesto</title>
+        <title>Место</title>
         <link href="./pages/index.css" rel="stylesheet">
     </head>
     <body class="page">
@@ -13,9 +13,7 @@
         </header>
         <main>
             <section class="profile">
-                <button class="profile__avatar-but">
                     <img src="./images/Avatar.png" alt="жак" class="profile__avatar">
-                </button>
                 <div class="profile__info">
                     <div class="profile__user">
                         <h1 class="profile__title">Жак-Ив Кусто</h1>
@@ -75,19 +73,17 @@
         <footer class="footer">
             <h2 class="footer__text">&copy;2022 Mesto Russia</h2>
         </footer>
-        <section class="popup popup_type_edit">
+        <div class="popup popup_type_edit">
             <div class="popup__container">
                 <button class="popup__close" type="button" title="Закрыть окно" aria-label="Закрыть"></button>
                 <h3 class="popup__header">Редактировать профиль</h3>
-                <form action="pop" class="popup__form">
+                <form action="name" class="popup__form">
                     <input type="text" class="popup__input popup__input_type_name" name="name" value="" placeholder="Имя пользователя" minlength="2" maxlength="40" required>
-                    <span class="popup__input-error" id="name_error"></span>
                     <input type="text" class="popup__input popup__input_type_description" name="description" value="" placeholder="Описание пользователя" minlength="2" maxlength="200" required>
-                    <span class="popup__input-error" id="description_error"></span>
                     <button type="submit" class="popup__button">Сохранить</button>
                 </form>
             </div>
-        </section>
+        </div>
         <script src="./pages/index.js"></script>
     </body>
 </html>

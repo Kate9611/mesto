@@ -1,9 +1,10 @@
-.profile__user {
-   display: flex;
-   align-items: center;
-}
-@media(max-width:1279px){
-   .profile__user{
+.profile__user { 
+   display: flex; 
+   align-items: center; 
+} 
+
+@media(max-width:1279px){ 
+   .profile__user{ 
       justify-content: center;
-}
-}
+   }
+} 
