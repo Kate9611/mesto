@@ -15,7 +15,7 @@ function openPopup(){
 function closePopup(){
     popup.classList.remove('popup_open')
 }
-function butSubmit(event){
+function formSubmit (event){
     event.preventDefault();
     titleElement.textContent = nameFieldElement.value;
     subtitleElement.textContent = descriptionElement.value;
@@ -23,4 +23,4 @@ function butSubmit(event){
 }
 editButton.addEventListener('click', openPopup)
 closePopupButton.addEventListener('click', closePopup)
-popupForm.addEventListener('submit', butSubmit)
+popupForm.addEventListener('submit', formSubmit)

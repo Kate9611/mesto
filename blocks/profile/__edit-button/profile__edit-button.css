@@ -16,9 +16,9 @@
 }
     @media (max-width:1279px) {
         .profile__edit-button {
-            margin:5px 0 0 5px;
-            width:18px;
-            height:18px;
+            margin:5px 0 0 10px;
+            width: 18px;
+            height: 18px;
             padding: 0rem;
         }
     }
